@@ -8,7 +8,6 @@ scipy
 librosa
 soundfile
 pydub
-ffmpeg-python
 opensmile
 praat-parselmouth
 

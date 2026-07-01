@@ -18,10 +18,16 @@ def convert_to_wav(input_file):
         output_file
     ]
 
-    subprocess.run(
+    result = subprocess.run(
         command,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL
+        capture_output=True,
+        text=True
     )
+
+    print(result.stdout)
+    print(result.stderr)
+
+    if result.returncode != 0:
+        raise Exception(result.stderr)
 
     return output_file
