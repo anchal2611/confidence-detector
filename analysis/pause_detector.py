@@ -4,7 +4,7 @@ from silero_vad import (
     get_speech_timestamps
 )
 
-model = load_silero_vad()
+model = load_silero_vad(onnx=True)
 
 
 def detect_pauses(audio_path):

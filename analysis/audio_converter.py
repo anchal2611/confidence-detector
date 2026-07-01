@@ -4,7 +4,7 @@ import subprocess
 
 def convert_to_wav(input_file):
 
-    output_file = os.path.splitext(input_file)[0] + ".wav"
+    output_file = os.path.splitext(input_file)[0] + "_converted.wav"
 
     command = [
         "ffmpeg",
