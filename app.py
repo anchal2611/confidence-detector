@@ -32,7 +32,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         # Add your deployed frontend later
-        # "https://your-finalround.vercel.app"
+        "https://your-finalround.vercel.app",
+        "https://confidence-detector.onrender.com"
     ],
     allow_credentials=True,
     allow_methods=["*"],
