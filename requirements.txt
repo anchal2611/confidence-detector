@@ -9,7 +9,6 @@ librosa
 soundfile
 pydub
 opensmile
-praat-parselmouth
 
 silero-vad
 onnxruntime
